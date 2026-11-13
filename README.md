@@ -2,7 +2,7 @@
 
 Pre-built geospatial datasets consumed by [TerraConverter](https://github.com/zlatkobalas/TerraConverter)'s desktop app (Settings → External Data → Download/Update). This repository holds **release assets only** — no application code, no issue tracking.
 
-It is separate from [`terraconverter-geodata`](https://github.com/zlatkobalas/terraconverter-geodata) (the Android address index repo): that repo's downloader calls GitHub's `/releases/latest` endpoint, which returns only the single most recent release for the *whole* repo. Publishing independently-versioned desktop datasets there would intermittently hide the Android asset behind a unrelated "latest" release. Keeping them apart avoids that regression entirely.
+It is separate from [`terraconverter-geodata-android`](https://github.com/zlatkobalas/terraconverter-geodata-android) (the Android address index repo): that repo's downloader calls GitHub's `/releases/latest` endpoint, which returns only the single most recent release for the *whole* repo. Publishing independently-versioned desktop datasets there would intermittently hide the Android asset behind a unrelated "latest" release. Keeping them apart avoids that regression entirely.
   
 ## Datasets
 
