@@ -14,14 +14,19 @@ Each dataset is versioned and released **independently** — they update on diff
 | Geoid model (5 arc-min) | `geoid-5arcmin-v*` | `egm2008-5.pgm.gz` | EGM2008 geoid grid, 5' resolution (smaller/faster alternative, ~20 MB download) |
 | World Magnetic Model | `wmm-v*` | `WMM.COF` | NOAA/NGA WMM coefficients |
 | Administrative boundaries | `admin-boundaries-v*` | `admin_boundaries.zip` | `country/`, `county/`, `lgu/`, `settlement/` shapefiles (DGU INSPIRE Administrative Units, simplified) |
+| UTM grid | `utm-grid-v*` | `utm_grid.zip` | Esri/NGA World UTM Grid shapefile |
+| MGRS grid | `mgrs-grid-v*` | `mgrs_grid.zip` | Worldwide MGRS 100 km square grid shapefile |
+| Map sheets | `map-sheets-v*` | `map_sheets.zip` | 7 series of Croatian official map sheet-index shapefiles (`dof5_hrts96tm/`, `hok5_hdks/`, `tk25_htrs96tm/`, `tk25_hdks/`, `tk25_vgi/`, `tk100_hdks/`, `tk200_hdks/`) |
 | DGU addresses | `addresses-v*` | `Address.bundle.zip` | `Address.gml.gz` (source) + `Address.sqlite` (pre-built FTS5 index) |
 | DGU place names | `toponyms-v*` | `GeographicalNames.bundle.zip` | `GeographicalNames.gml.gz` (source) + `GeographicalNames.sqlite` (pre-built FTS5 index) |
   
 ## Licensing / attribution
 
-- **DGU addresses, DGU place names, administrative boundaries** — source: [Državna geodetska uprava (DGU)](https://dgu.gov.hr), under Croatia's open data licence ("Otvorena dozvola", <https://data.gov.hr/otvorena-dozvola>): free for any use, commercial or non-commercial, with attribution and the date of last modification.
+- **DGU addresses, DGU place names, administrative boundaries, map sheets** — source: [Državna geodetska uprava (DGU)](https://dgu.gov.hr), under Croatia's open data licence ("Otvorena dozvola", <https://data.gov.hr/otvorena-dozvola>): free for any use, commercial or non-commercial, with attribution and the date of last modification.
 - **Geoid model (EGM2008)** — source: NGA (US National Geospatial-Intelligence Agency), public domain.
 - **WMM coefficients** — source: NOAA/NGA World Magnetic Model, public domain.
+- **UTM grid** — source: Esri/NGA "World UTM Grid" (ArcGIS Hub), ArcGIS Data and Maps Redistribution Rights ("Yes 3"): redistributable without a Value-Added Software Application, with metadata/attribution kept.
+- **MGRS grid** — algorithmically generated from [github.com/klaukh/MGRS](https://github.com/klaukh/MGRS) (MIT license), not a redistribution of NGA's own MGRS data.
 
 Pre-built SQLite indexes (addresses/place names) are derived works built by [`terraconverter`](https://github.com/zlatkobalas/TerraConverter)'s own indexing code from the DGU GML source included alongside them in the same archive.
   
