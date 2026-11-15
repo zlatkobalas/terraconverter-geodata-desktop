@@ -10,7 +10,8 @@ Each dataset is versioned and released **independently** — they update on diff
 
 | Dataset | Tag prefix | Asset | Contents |
 |---|---|---|---|
-| Geoid model | `geoid-v*` | `egm2008-5.pgm.gz` | EGM2008 geoid grid, 5' resolution |
+| Geoid model (1 arc-min) | `geoid-v*` | `egm2008-1.pgm.gz` | EGM2008 geoid grid, 1' resolution (most accurate, ~360 MB download) |
+| Geoid model (5 arc-min) | `geoid-5arcmin-v*` | `egm2008-5.pgm.gz` | EGM2008 geoid grid, 5' resolution (smaller/faster alternative, ~20 MB download) |
 | World Magnetic Model | `wmm-v*` | `WMM.COF` | NOAA/NGA WMM coefficients |
 | Administrative boundaries | `admin-boundaries-v*` | `admin_boundaries.zip` | `country/`, `county/`, `lgu/`, `settlement/` shapefiles (DGU INSPIRE Administrative Units, simplified) |
 | DGU addresses | `addresses-v*` | `Address.bundle.zip` | `Address.gml.gz` (source) + `Address.sqlite` (pre-built FTS5 index) |
